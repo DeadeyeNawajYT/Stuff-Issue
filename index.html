@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Stuff Issue — Emotional Storytelling for Skincare Brands</title>
+  <title>Stuff Issue — Emotional Short Film Creator</title>
   <meta name="description" content="We create emotional animated short films and brand stories that make skincare brands unforgettable. Feelings over ads, always.">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="icon" href="/assets/images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/images/logo.png">
 </head>
 <body>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress" style="position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--yellow),var(--blue));z-index:9999;pointer-events:none;transition:width 0.08s linear;"></div>
 
 <!-- NAV -->
 <nav class="nav" id="mainNav">
   <a href="#" class="nav-logo" data-page="home">
-    <img src="/assets/images/logo.png" alt="Stuff Issue Logo">
+    <img src="assets/images/logo.png" alt="Stuff Issue Logo">
     <span>STUFF ISSUE</span>
   </a>
   <ul class="nav-links">
     <li><a href="#" data-page="home" class="active">Home</a></li>
-    <li><a href="#" data-page="portfolio">Portfolio</a></li>
     <li><a href="#" data-page="about">About</a></li>
     <li><a href="#" data-page="services">Work With Us</a></li>
     <li><a href="#" data-page="contact" class="btn btn-primary" style="padding:10px 24px;font-size:.75rem;">Let's Talk</a></li>
@@ -32,7 +34,6 @@
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-close" id="mobileClose">✕</button>
   <a href="#" data-page="home">Home</a>
-  <a href="#" data-page="portfolio">Portfolio</a>
   <a href="#" data-page="about">About</a>
   <a href="#" data-page="services">Work With Us</a>
   <a href="#" data-page="contact">Contact</a>
@@ -41,15 +42,19 @@
 <!-- ========== HOME PAGE ========== -->
 <div class="page active" id="page-home">
   <section class="hero" id="hero">
-    <div class="hero-bg"><img src="/assets/images/char-serum.png" alt="Stuff Issue — 3D Pixar skincare character" loading="eager"></div>
     <div class="hero-particles"></div>
-    <div class="hero-content">
-      <p class="hero-tagline">Emotional Storytelling Creator</p>
-      <h1>We don't just create videos…<br>We create <em>feelings</em> people remember.</h1>
-      <p class="hero-sub">Helping skincare brands tell animated stories that touch hearts, build trust, and turn viewers into loyal believers — not just buyers.</p>
-      <div class="hero-buttons">
-        <a href="#" class="btn btn-yellow" data-page="portfolio">Watch Our Work</a>
-        <a href="#" class="btn btn-secondary" data-page="services">Work With Us</a>
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-tagline">Emotional Short Film Creator</p>
+        <h1>We don't just create videos…<br>We create <em>feelings</em> people remember.</h1>
+        <p class="hero-sub">Helping skincare brands tell animated stories that touch hearts, build trust, and turn viewers into loyal believers — not just buyers.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-yellow" data-page="services">Work With Us</a>
+          <a href="#" class="btn btn-secondary" data-page="contact">Let's Talk</a>
+        </div>
+      </div>
+      <div class="hero-banner">
+        <img src="assets/images/hero-banner.jpg" alt="Stuff Issue — 3D Pixar skincare characters" loading="eager">
       </div>
     </div>
   </section>
@@ -58,60 +63,13 @@
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item reveal"><h3>60M+</h3><p>Total Views</p></div>
-        <div class="stat-item reveal"><h3>48+</h3><p>Brand Stories</p></div>
         <div class="stat-item reveal"><h3>3.8×</h3><p>Avg. Engagement Lift</p></div>
         <div class="stat-item reveal"><h3>94%</h3><p>Client Retention</p></div>
       </div>
     </div>
   </section>
 
-  <section class="section featured-section">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label reveal">Featured Work</p>
-        <h2 class="section-title reveal">Stories That Stayed With People</h2>
-        <p class="section-desc reveal">Each animated film is born from a real emotion — brought to life through adorable 3D characters wearing the Stuff Issue badge.</p>
-      </div>
-      <div class="work-grid">
-        <div class="work-card reveal">
-          <div class="work-card-img">
-            <img src="/assets/images/char-cream.png" alt="The Morning Ritual — Cream Jar Character" loading="lazy">
-            <div class="work-card-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-          </div>
-          <div class="work-card-body">
-            <p class="work-card-brand">Lumière Skincare</p>
-            <h3 class="work-card-title">The Morning Ritual</h3>
-            <p class="work-card-desc">A little cream jar character wakes up early just to be part of someone's quiet morning — a tiny act of love, animated.</p>
-            <div class="work-card-meta"><span>🎬 2.4M views</span><span>❤️ 340K saves</span></div>
-          </div>
-        </div>
-        <div class="work-card reveal">
-          <div class="work-card-img">
-            <img src="/assets/images/char-sunscreen.png" alt="Sunny Days — Sunscreen Character" loading="lazy">
-            <div class="work-card-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-          </div>
-          <div class="work-card-body">
-            <p class="work-card-brand">Botanica</p>
-            <h3 class="work-card-title">Sunny Days</h3>
-            <p class="work-card-desc">A cheerful sunscreen character protects everyone on a beach adventure — showing care is the best kind of love.</p>
-            <div class="work-card-meta"><span>🎬 1.8M views</span><span>❤️ 280K saves</span></div>
-          </div>
-        </div>
-        <div class="work-card reveal">
-          <div class="work-card-img">
-            <img src="/assets/images/char-shampoo.png" alt="Bubble's Big Day — Shampoo Character" loading="lazy">
-            <div class="work-card-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-          </div>
-          <div class="work-card-body">
-            <p class="work-card-brand">Velvet Rose</p>
-            <h3 class="work-card-title">Bubble's Big Day</h3>
-            <p class="work-card-desc">A shampoo bottle character's first day at the bathroom shelf — making friends and finding where it belongs.</p>
-            <div class="work-card-meta"><span>🎬 3.1M views</span><span>❤️ 520K saves</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <section class="hook-section">
     <div class="container">
@@ -129,96 +87,15 @@
   </section>
 </div>
 
-<!-- ========== PORTFOLIO PAGE ========== -->
-<div class="page" id="page-portfolio">
-  <section class="section portfolio-section" style="padding-top:140px;">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Portfolio</p>
-        <h2 class="section-title">Every Frame Has a Feeling</h2>
-        <p class="section-desc">These aren't just animations. They're emotional stories told through adorable Stuff Issue characters that made people pause, feel, and remember.</p>
-      </div>
-      <div class="filter-tabs">
-        <button class="filter-tab active" data-filter="all">All Stories</button>
-        <button class="filter-tab" data-filter="brand">Brand Stories</button>
-        <button class="filter-tab" data-filter="emotional">Emotional Films</button>
-        <button class="filter-tab" data-filter="skincare">Skincare Content</button>
-      </div>
-      <div class="portfolio-grid" id="portfolioGrid">
-        <div class="work-card reveal" data-category="brand">
-          <div class="work-card-img"><img src="/assets/images/char-cream.png" alt="The Morning Ritual" loading="lazy"><div class="work-card-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <div class="work-card-body">
-            <p class="work-card-brand">Lumière Skincare</p>
-            <h3 class="work-card-title">The Morning Ritual</h3>
-            <p class="work-card-desc">A cream jar character's quiet morning journey — becoming part of someone's self-love ritual.</p>
-            <div class="work-card-meta"><span>🎬 2.4M views</span><span>❤️ 340K saves</span></div>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="emotional">
-          <div class="work-card-img"><img src="/assets/images/char-sunscreen.png" alt="Sunny Days" loading="lazy"><div class="work-card-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <div class="work-card-body">
-            <p class="work-card-brand">Botanica</p>
-            <h3 class="work-card-title">Sunny Days</h3>
-            <p class="work-card-desc">A sunscreen character discovers that protecting someone is the purest form of caring.</p>
-            <div class="work-card-meta"><span>🎬 1.8M views</span><span>❤️ 280K saves</span></div>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="brand">
-          <div class="work-card-img"><img src="/assets/images/char-shampoo.png" alt="Bubble's Big Day" loading="lazy"><div class="work-card-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <div class="work-card-body">
-            <p class="work-card-brand">Velvet Rose</p>
-            <h3 class="work-card-title">Bubble's Big Day</h3>
-            <p class="work-card-desc">A shampoo character's first day making friends — showing the personality behind every product.</p>
-            <div class="work-card-meta"><span>🎬 3.1M views</span><span>❤️ 520K saves</span></div>
-          </div>
-        </div>
-        <div class="work-card reveal" data-category="skincare">
-          <div class="work-card-img"><img src="/assets/images/char-serum.png" alt="The Little Serum" loading="lazy"><div class="work-card-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <div class="work-card-body">
-            <p class="work-card-brand">Stuff Issue Original</p>
-            <h3 class="work-card-title">The Little Serum</h3>
-            <p class="work-card-desc">A serum bottle character goes on an adventure to find where it truly belongs — in someone's heart.</p>
-            <div class="work-card-meta"><span>🎬 4.6M views</span><span>❤️ 780K saves</span></div>
-          </div>
-        </div>
-      </div>
 
-      <div class="case-study reveal">
-        <div class="case-study-header">
-          <p class="section-label">Case Study</p>
-          <h3 class="section-title" style="font-size:1.6rem;">Lumière Skincare × Stuff Issue</h3>
-          <p class="section-desc">How one animated character story transformed a struggling skincare launch into a movement.</p>
-        </div>
-        <div class="case-steps">
-          <div class="case-step">
-            <p class="case-step-num">01</p>
-            <h4>The Problem</h4>
-            <p>Lumière had a beautiful product but zero emotional connection. Their content looked pretty but felt empty — scroll-past material.</p>
-          </div>
-          <div class="case-step">
-            <p class="case-step-num">02</p>
-            <h4>Our Approach</h4>
-            <p>We stopped talking about ingredients. Instead, we animated a cream jar character in Stuff Issue shorts waking up early just to be part of someone's quiet morning.</p>
-          </div>
-          <div class="case-step">
-            <p class="case-step-num">03</p>
-            <h4>The Result</h4>
-            <p>2.4M views. 340K saves. 180% website traffic boost. Thousands of comments saying "this little character is me." That's when a brand becomes a feeling.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
 
 <!-- ========== ABOUT PAGE ========== -->
 <div class="page" id="page-about">
   <section class="section about-section" style="padding-top:140px;">
     <div class="container">
       <div class="about-grid">
-        <div class="about-img reveal-left">
-          <img src="/assets/images/char-cream.png" alt="About Stuff Issue — the creative storytellers" loading="lazy">
-          <div class="about-img-accent"></div>
+        <div class="about-img reveal-left" style="display:flex;align-items:center;justify-content:center;background:transparent;box-shadow:none;">
+          <img src="assets/images/logo.png" alt="Stuff Issue Logo" loading="lazy" style="max-width:320px;border-radius:50%;">
         </div>
         <div class="about-content">
           <p class="section-label reveal">Our Story</p>
@@ -236,7 +113,7 @@
 
   <section class="hook-section">
     <div class="container">
-      <p class="section-label reveal">Why Animated Storytelling</p>
+      <p class="section-label reveal">Why Animated Short Films</p>
       <h2 class="section-title reveal" style="color:var(--blue-dark);font-size:clamp(1.6rem,3vw,2.2rem);max-width:700px;margin:0 auto 20px;">Ads interrupt. Characters invite.</h2>
       <p class="section-desc reveal" style="color:var(--text);max-width:560px;margin:0 auto;">The best skincare brands don't sell routines — they sell the way you want to feel. We help you translate that feeling into animated characters people can't scroll past.</p>
     </div>
@@ -257,19 +134,19 @@
           <div class="service-icon">🎬</div>
           <h3>Story-Based Animated Reel</h3>
           <p>Your product transformed into an adorable 3D Stuff Issue character, woven into an emotional short story — no hard selling, just authentic animated moments.</p>
-          <p style="margin-top:16px;font-size:.8rem;font-weight:600;color:var(--blue);">Starting from ₹15,000</p>
+
         </div>
         <div class="service-card reveal">
           <div class="service-icon">🎞️</div>
           <h3>Emotional Brand Film</h3>
           <p>A cinematic animated short (60–180 seconds) where your product characters tell a story people save, share, and watch again when they need a smile.</p>
-          <p style="margin-top:16px;font-size:.8rem;font-weight:600;color:var(--blue);">Starting from ₹40,000</p>
+
         </div>
         <div class="service-card reveal">
           <div class="service-icon">✨</div>
           <h3>Campaign Character Series</h3>
           <p>A series of interconnected character stories that build an emotional universe around your brand — creating not just customers, but a community that loves your characters.</p>
-          <p style="margin-top:16px;font-size:.8rem;font-weight:600;color:var(--blue);">Starting from ₹1,00,000</p>
+
         </div>
       </div>
     </div>
@@ -371,7 +248,7 @@
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <div class="footer-brand"><img src="/assets/images/logo.png" alt="Stuff Issue"><span>STUFF ISSUE</span></div>
+    <div class="footer-brand"><img src="assets/images/logo.png" alt="Stuff Issue"><span>STUFF ISSUE</span></div>
     <p class="footer-tagline">"Creating stories people don't just watch — but feel."</p>
     <div class="footer-social">
       <a href="#" aria-label="Instagram">📸</a>
@@ -383,6 +260,10 @@
   </div>
 </footer>
 
-<script src="/js/main.js"></script>
+<!-- LIBRARIES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.9/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
